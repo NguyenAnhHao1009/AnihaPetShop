@@ -1,0 +1,739 @@
+
+html{
+  scroll-behavior: smooth;
+}
+
+.dropdown-menu {
+  display: none;
+  animation: dropdownAnimation 0.5s ease-in-out;
+}
+@keyframes dropdownAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: #fdfeff;
+  border: 0px;
+}
+
+form#search-form {
+  margin: 0px;
+}
+
+a.dropdown-item {
+  font-weight: bolder;
+  transition: all 0.3s ease-in-out;
+}
+
+a.dropdown-item:hover {
+  color: #ff0051;
+  background-color: #efefefb9;
+  
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 40px;
+  font-weight: bolder;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: #ffffff00;
+  color: #070c64;
+  transition: all 0.3s ease-in-out;
+}
+
+#backToTopBtn:hover{
+  color: #ff0088;
+}
+
+#change-password-btn, .btn-submit-cart {
+  background-color: #ff004c;
+  color: white;
+}
+
+#change-password-btn:hover,
+.btn-submit-cart:hover {
+  background-color: #ff004cb5;
+  color: white;
+}
+
+#user-info-form button {
+  background-color: #0d0179;
+  color: white;
+}
+
+#user-info-form button:hover {
+  background-color: #1900ffce;
+  color: white;
+}
+
+.sticky-top{
+  box-shadow: 0px 5px 10px 2px rgba(17, 24, 28, 0.21);
+}
+
+a.nav-link {
+  text-transform: uppercase;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+  transition: all 0.2s ease-in-out;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 0 3px;
+}
+
+a.nav-link:hover {
+  color: rgb(255, 255, 255);
+  transform: scale(1.05);
+  box-shadow: 2px 2px 10px 1px rgb(215, 246, 248);
+}
+
+
+.nav-item .actives {
+  transform: scale(1.05);
+  color: rgb(255, 0, 93);
+  background-color:  #ffffff;
+}
+
+.nav-item .actives:hover{
+  transform: scale(1.05);
+  color: rgb(255, 0, 93);
+  background-color:  #ffffff;
+}
+
+
+.group .btn {
+  background-color: #133b70;
+  color: rgb(255, 255, 255);
+  transition: background-color 0.5 ease;
+}
+
+.btn-cart,
+.btn-go-to-admin {
+  transition: color 0.2s ease;
+}
+
+.btn-cart:hover,
+.btn-go-to-admin:hover {
+  color: #f30045;
+}
+
+.group .btn:hover {
+  background-color: #0251fd;
+}
+
+.search-btn {
+  border: none;
+  margin: 2px;
+  background: none;
+  font-size: 1.3em;
+  transition: all 0.4s ease-in-out;
+}
+
+.search-btn:hover {
+  color: #9f0a0a;
+}
+
+.bg-col {
+  background-color: #ff00447b;
+  transition: all 0.2s ease-in-out;
+}
+
+.bg-col:hover{
+  background-color:  #ff0051;
+  color: black;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  align-items: center;
+}
+
+.fa-brands {
+  color: #182c47;
+  font-size: 2em;
+  transition: color 0.5s ease;
+}
+
+.fa-brands:hover {
+  color: rgb(181, 181, 181);
+}
+
+.support a {
+  transition: color 0.1s ease;
+  transition: text-decoration 0.1 ease;
+}
+
+.support a:hover {
+  color: #949292;
+  text-decoration: underline;
+}
+
+footer h4,
+a {
+  color: #182c47;
+}
+
+/* Login Page */
+
+#login-body {
+  height: 100vh;
+  background-image: url(../img/login/background.jpg);
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#login-btn,
+#sign-up-btn,
+#reset-btn,
+#close-btn {
+  color: white;
+  background-color: #182c47;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#login-btn:hover,
+#sign-up-btn:hover,
+#reset-btn:hover,
+#close-btn:hover {
+  background-color: #6475f7;
+}
+
+#login-form a {
+  border-radius: 5px;
+  border: 0.1px solid #ececec;
+  color: #182c47;
+  text-decoration: none;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#login-form a:hover,
+#sign-up-form .cancel-btn:hover {
+  background-color: #d5d5d5;
+}
+
+/* Login Page */
+
+/* Sign up Page */
+#sign-up-form label i {
+  font-size: 1.1em;
+}
+
+#sign-up-form #sign-up-btn,
+#reset-btn {
+  border-radius: 4px;
+  color: white;
+  border: 0px;
+  padding: 3px;
+}
+
+#sign-up-form .cancel-btn {
+  border-radius: 5px;
+  border: 0.1px solid #ececec;
+  color: #182c47;
+  text-decoration: none;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#cancel-reset {
+  border: 0.3px solid rgb(209, 209, 209);
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+#login-box{
+  padding-bottom: 50px;
+}
+
+/* Sign up Page */
+
+.service i {
+  font-size: 1.5em;
+  color: rgb(255, 255, 255);
+  background-color: rgb(89, 215, 173);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.service {
+  padding: 10px 5px;
+  border-radius: 6px;
+  transition: box-shadow ease-in-out 0.3s;
+}
+
+.service:hover {
+  box-shadow: 0px 0px 10px 5px rgba(64, 0, 255, 0.1);
+}
+
+/*  */
+
+.image-container {
+  position: relative;
+  display: inline-block; /* Đảm bảo phần overlay không chiếm toàn bộ chiều rộng của container */
+}
+
+.image-container img {
+  border-radius: 15px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.3); /* Màu xám nhạt trong suốt */
+  opacity: 0; /* Ban đầu là ẩn đi */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.6s ease; /* Hiệu ứng khi hover */
+}
+
+.overlay span {
+  color: white; /* Màu chữ */
+  font-size: 24px; /* Cỡ chữ */
+}
+
+.image-container:hover .overlay {
+  opacity: 1; /* Hiển thị overlay khi hover */
+}
+
+.shop-now-btn {
+  color: rgb(255, 255, 255);
+  background-color: #182c47;
+  transition: background-color ease-in-out 0.3s;
+}
+.shop-now-btn:hover {
+  background-color: rgb(47, 247, 180);
+}
+
+/* product  cart */
+
+.product {
+  padding: 0px 0px 10px 0px;
+  background-color: #ffffff;
+  border-radius:  0 0 1.2em 1.2em;
+  border: 1px solid rgb(239, 239, 239);
+  height: 22rem;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+  cursor: pointer;
+}
+
+.product:hover {
+  background-color: #ffe4e434;
+  border-bottom: 5px solid rgba(28, 0, 94, 0.144);
+  box-shadow: 0px 0px 10px 5px rgba(169, 160, 233, 0.263);
+  
+}
+
+.product .info {
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 60%;
+}
+
+.product-box .btn-detail {
+  color: #182c47;
+  border: 0.1px solid #090081;
+  transition: all 0.3s ease-in-out;
+}
+
+.product-box {
+  transition: all 0.5s ease-in-out;
+}
+
+.product-box:hover {
+  transform: scale(1.1);
+}
+
+.product-box .btn-detail:hover {
+  background-color: #090081;
+  color: white;
+}
+
+.btn-add-to-cart {
+  background-color: #090081;
+  color: white;
+  transition: all 0.3s ease-in;
+}
+
+.btn-back{
+  background-color: #090081;
+  color: white;
+  transition: all 0.3s ease-in;
+}
+
+#more-products-btn {
+  background-color: #090081;
+  color: white;
+  transition: all 0.3s ease-in;
+}
+
+.btn-add-to-cart:hover,
+.btn-back:hover,
+#more-products-btn:hover {
+  background-color: rgb(255, 0, 102);
+  color: white;
+}
+
+/* product  cart */
+
+.form-errors {
+  color: rgb(255, 16, 16);
+  font: italic 0.8rem arial;
+  text-align: right;
+}
+
+/* Detail Product */
+
+.box-detail {
+  background-color: rgba(80, 187, 254, 0);
+  border-radius: 70px 5px;
+  border-top: 1px solid #bdbdbd1d;
+  border-left: 1px solid #bdbdbd1d;
+  box-shadow: 8px 10px 15px rgba(30, 0, 255, 0.1);
+}
+
+.box-detail input[type=number]{
+  border: 1px solid rgba(122, 122, 122, 0.296);
+  border-radius: 5px;
+}
+.box-detail input[type=number]:focus{
+  box-shadow: 1px 1px 10px 2px rgb(255, 203, 203);
+}
+
+
+.box-detail h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #ff0088;
+}
+
+/* Admin Dash Board */
+.box {
+  cursor: pointer;
+  color: whitesmoke;
+  box-shadow: 0px 5px 10px 0px rgba(45, 33, 33, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  padding: 15px 0px 0px 0px;
+}
+
+.box:hover {
+  box-shadow: 5px 5px 10px 0px rgba(45, 33, 33, 0.5);
+}
+
+.box i.big-icon {
+  color: rgb(255, 255, 255);
+  opacity: 0.25;
+  font-size: 70px;
+  padding: right 10px;
+}
+
+.box .foot-box {
+  display: block;
+  background-color: #000000;
+  opacity: 0.2;
+}
+
+/* Admin products */
+#admin-search-form  input{
+  border-radius: 15px 0px 0px 15px;
+  border: 1px solid rgba(0, 0, 255, 0.177);
+}
+
+#admin-search-form input:hover{
+  box-shadow: 1px 1px 4px 3px rgba(159, 159, 159, 0.407);
+  background-color: #0a02fe0f;
+}
+
+
+#admin-search-form button{
+  border: 1px solid rgba(0, 0, 255, 0.177);
+  border-radius: 0px 15px 15px 0px;
+}
+
+
+
+.admin-table {
+  border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.admin-table th {
+  background-color: #f2f2f2;
+}
+
+.admin-create-product-btn,
+.btn-create-product {
+  background-color: #090081;
+  color: white;
+  transition: all 0.3s ease-in;
+  padding: 7px;
+  font-size: large;
+  border-radius: 5px;
+}
+
+.btn-outline-create-product {
+  color: #090081;
+  border: 1px solid #090081;
+  transition: all 0.3s ease-in;
+  padding: 7px;
+  font-size: large;
+  border-radius: 5px;
+}
+
+.admin-create-product-btn:hover,
+.btn-create-product:hover,
+.btn-outline-create-product:hover {
+  background-color: rgb(255, 0, 102);
+  color: white;
+}
+
+#previewImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+.form-product {
+  padding: 10px 0px 0px 0px;
+  border-radius: 0.2em;
+  box-shadow: 0px 0px 10px 5px rgba(5, 0, 47, 0.1);
+}
+
+.btn-remove {
+  color: rgb(255, 0, 102);
+  border: 1px solid rgb(255, 0, 102);
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-remove:hover {
+  background-color: rgb(255, 0, 102);
+  color: white;
+}
+
+.btn-edit {
+  color: rgb(255, 255, 255);
+  background-color: rgb(28, 0, 212);
+  transition: all 0.3s ease-in-out;
+}
+.btn-edit:hover {
+  color: white;
+  background-color: rgb(255, 0, 102);
+}
+
+.table-cart img {
+  transition: all 0.3s ease-in-out;
+}
+
+.table-cart img:hover {
+  transform: scale(1.1);
+}
+
+.table-cart .product-name {
+  transition: all 0.3s ease-in-out;
+}
+
+.table-cart .product-name:hover {
+  color: rgb(255, 0, 102);
+  text-decoration: underline;
+}
+
+.pagination a {
+  font-weight: bolder;
+  border-radius: 10%;
+  padding: 8px;
+  background-color: #ffffff;
+  color: rgb(15, 0, 127);
+  border: solid 1px #b2b2b23e;
+  transition: all 0.2s ease-in-out;
+}
+
+.pagination .active a {
+  padding: 10px;
+  background-color: rgb(255, 0, 128);
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 4px #ff00bb;
+  border: none;
+}
+
+.pagination li {
+  padding: 7px;
+}
+
+.pagination a:hover {
+  transform: scale(1.2);
+}
+
+.btn-change-quantity-in-cart {
+  background-color: #ffffff;
+  color: rgb(16, 0, 120);
+  transition: all 0.2s ease-in-out;
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+}
+
+.btn-change-quantity-in-cart:hover {
+  transform: scale(1.1);
+  background-color: rgb(255, 0, 102);
+  color: white;
+}
+
+/* Slider */
+.slider {
+  width: 100%;
+  max-width: 100vw;
+  height: 450px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider .list {
+  position: absolute;
+  width: max-content;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  transition: 1s;
+}
+
+.slider .list img {
+  width: 100vw;
+  max-width: 100vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider .buttons {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider .buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(13, 4, 69, 0.217);
+  color: #fff;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.slider .dots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: #b1acac;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.slider .dots li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  background-color: #e0e0e0;
+  margin: 10px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.slider .dots li.active {
+  width: 30px;
+}
+
+@media screen and (max-width: 1300px) {
+  .slider {
+    height: 330px;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .slider {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .slider {
+    height: 170px;
+  }
+}
+
+
+/* Slider */
+
+/* Error page and contact page */
+
+.error-page img, .contact-page img{
+  transition: all 0.4s ease-in-out;
+}
+
+.error-page img:hover, .contact-page img{
+  transform: scale(1.05);
+}
+/* Error page and contact page */
+
+/* before footer */
+
+#before-footer{
+  background-color: rgba(255, 0, 43, 0.077);
+}
+
+#before-footer i, #before-footer h5{
+  font-size: 1.3em;
+  color: rgba(3, 0, 91, 0.979);
+}
+#before-footer p{
+  color: rgba(3, 0, 91, 0.559);
+}
+
+#before-footer a.sign-up{
+  transition: all 0.4s ease-in-out;
+}
+#before-footer a.sign-up:hover{
+  transform: scale(1.03);
+  box-shadow: 0px 5px 2px 1px rgba(0, 0, 0, 0.153);
+}
+/* before footer */

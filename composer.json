@@ -1,0 +1,15 @@
+{
+  "require": {
+    "mpdf/mpdf": "^8.2",
+    "bramus/router": "^1.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/Models/classes/"
+    }, 
+    "files": [
+      "src/Models/functions.php",
+      "src/Models/connect.php"
+    ]
+  }
+}
