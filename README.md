@@ -12,7 +12,7 @@ Học kỳ 2, Năm học 2023-2024
 
 **Tài khoản vào trang quản lý**: username: admin@gmail.com | password: 123
 
-**Cấu hình v-host**:(Em đặt thư mục gốc Ani-site trực tiếp trong ổ D)
+**Cấu hình v-host**:(thư mục gốc trực tiếp trong ổ D)
 
         <VirtualHost *:80>	
         DocumentRoot "C:/xampp/htdocs" 
